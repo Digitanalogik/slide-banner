@@ -1,23 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './images/cog.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="Sivu">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} className="up right wheel spin-l fade-in" alt="Spinning wheel" />
+        <div className="Nauha">
+          <p className="Otsikko">
+            Tulossa...
+          </p>
+        </div>
+        <img src={logo} className="low right wheel spin-l" alt="Spinning wheel"/>
       </header>
     </div>
   );

@@ -1,0 +1,7 @@
+carddealer
+
+Fu76Ll1hH4yszZ-
+
+
+docker run --name ScrumDB -e POSTGRES_USER=carddealer -e POSTGRES_PASSWORD=Fu76Ll1hH4yszZ -e POSTGRES_DB=scrum -p 5432:5432 -v /var/run/postgresql:/var/run/postgresql postgres:12.4-alpine
+

@@ -1,19 +1,44 @@
-.App {
+
+
+.Sivu {
+  position: fixed;
+  top: 0.5vh;
+  right: 0.5vw;
+  height: 99vh;
+  width: 99vw;;
   text-align: center;
+  overflow: hidden;
+  background-color: #422C8E;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Nauha {
+  display: block;
+  position: absolute;
+  height: 40vh;
+  width: 80vw;
+  top: calc(10vh + 20vmin);
+  left: 50px;
+  border-radius: 10px;
+  background-color: #E5CDFA;
+  border: solid 5px #742EB1;
+  box-shadow: -5px -5px 5px  #280248,
+              5px 5px 5px  #280248
+              1px 1px 3px #FCF9FF inset;
+  animation: slide-left forwards 3s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@keyframes slide-left {
+  0%    {left: 101vw;}
+  100%  {left: 20vw;}
 }
 
-.App-header {
+.Palsta {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,15 +49,81 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.Otsikko {
+  display: block;
+  left: 7vmin;
+  line-height: 0.1;
+  font-weight: 700;
+  font-size: 172px;
+  color: #5E0DA4;
 }
 
-@keyframes App-logo-spin {
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.wheel {
+  display: block;
+  position: absolute;
+  height: 25vmin;
+  width: auto;
+}
+
+.right {
+  right: -10vw;
+}
+
+.up {
+  top: 18vh;
+}
+
+.low {
+  bottom: 15vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spin-r {
+    animation: rotate-right infinite 2s linear;
+  }
+
+  .spin-l {
+    animation: rotate-left infinite 2s linear;
+  }
+
+}
+
+@keyframes fader {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@keyframes fade-visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-right {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-left {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }
