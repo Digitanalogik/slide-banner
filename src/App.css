@@ -1,5 +1,4 @@
 
-
 .Sivu {
   position: fixed;
   top: 0.5vh;
@@ -15,27 +14,26 @@
   display: block;
   position: absolute;
   height: 40vh;
-  width: 80vw;
+  width: 70vw;
   top: calc(10vh + 20vmin);
   left: 50px;
   border-radius: 10px;
   background-color: #E5CDFA;
   border: solid 5px #742EB1;
   box-shadow: -5px -5px 5px  #280248,
-              5px 5px 5px  #280248
-              1px 1px 3px #FCF9FF inset;
+               5px  5px 5px  #280248
+               1px  1px 3px #FCF9FF inset;
   animation: slide-left forwards 3s ease-in;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-
+  padding-left: 5vw;
 }
-
 
 @keyframes slide-left {
   0%    {left: 101vw;}
-  100%  {left: 20vw;}
+  100%  {left: 40vw;}
 }
 
 .Palsta {
@@ -49,16 +47,13 @@
   color: white;
 }
 
-
 .Otsikko {
   display: block;
-  left: 7vmin;
   line-height: 0.1;
   font-weight: 700;
-  font-size: 172px;
+  font-size: 28vh;
   color: #5E0DA4;
 }
-
 
 .App-logo {
   height: 40vmin;
@@ -70,10 +65,12 @@
   position: absolute;
   height: 25vmin;
   width: auto;
+  opacity: 1;
+  z-index: 10;
 }
 
 .right {
-  right: -10vw;
+  right: -3vw;
 }
 
 .up {
@@ -98,16 +95,6 @@
 @keyframes fader {
   0%   { opacity: 0; }
   100% { opacity: 1; }
-}
-
-
-@keyframes fade-visible {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes rotate-right {

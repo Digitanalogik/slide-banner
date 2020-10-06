@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="Sivu">
       <header className="App-header">
-        <img src={logo} className="up right wheel spin-l fade-in" alt="Spinning wheel" />
+        <img src={logo} className="up right wheel spin-r fader" alt="Spinning wheel" />
         <div className="Nauha">
           <p className="Otsikko">
             Tulossa...
